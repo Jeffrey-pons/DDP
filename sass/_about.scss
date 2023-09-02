@@ -1,0 +1,83 @@
+body {
+  .section-one-about {
+    text-align: center;
+    img {
+      max-width: 20%;
+      padding-bottom: 60px;
+    }
+    padding-top: 60px;
+    .picture-about {
+      img {
+        max-width: 80%;
+      }
+    }
+    .about-text {
+      max-width: 1400px;
+      margin: auto;
+      text-align: center;
+      h1 {
+        font-family: "Alma-Bold";
+        font-size: 30px;
+      }
+      p {
+        font-family: "Alma";
+        // max-width: 1100px;
+        margin: auto;
+        font-size: 24px;
+        padding: 20px 10px 70px 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    main {
+      .section-one-about {
+        img {
+          max-width: 40%;
+        }
+        .about-text {
+          p {
+            padding: 20px;
+          }
+        }
+      }
+      .section-seven {
+        // padding-bottom: 70px;
+        .Container {
+          ul {
+            flex-direction: column;
+            li {
+              padding-bottom: 40px;
+              img {
+                max-width: 40%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+///
+///
+.section-one-contact {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  img {
+    max-width: 20%;
+    padding-bottom: 40px;
+  }
+  .about-text-contact {
+    h1 {
+      font-family: "Alma-Bold";
+      font-size: 30px;
+      padding-bottom: 30px;
+      cursor: url(../assets/img/cursor/test3.png) 20 10, auto;
+    }
+  }
+}

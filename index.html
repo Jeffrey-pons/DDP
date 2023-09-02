@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDP WEBSITE</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/ddp.svg" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="about">
+          <a href="./pages/about.html">Histoire</a>
+        </div>
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0629/5168/6394/files/logo_V2_110x.gif?v=1668185534"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="shop">
+          <a id="cart-link" href="">Panier</a>
+        </div>
+      </nav>
+    </header>
+    <div class="sidebar" id="sidebar">
+      <button class="close-btn" id="close-btn">&times</button>
+      <div class="sidebar-content">
+        <h2>Panier</h2>
+        <button id="checkout">Commander</button>
+      </div>
+    </div>
+    <div class="payment">
+      <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+              <div class="row">
+                <div class="col-50">
+                  <h3>Adresse de facturation</h3>
+                  <label for="fname"><i class="fa fa-user"></i> Nom</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="John M. Doe"
+                  />
+                  <label for="email"
+                    ><i class="fa fa-envelope"></i> Email</label
+                  >
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="john@example.com"
+                  />
+                  <label for="adr"
+                    ><i class="fa fa-address-card-o"></i> Adresse</label
+                  >
+                  <input
+                    type="text"
+                    id="adr"
+                    name="address"
+                    placeholder="542 W. 15th Street"
+                  />
+                  <label for="city"
+                    ><i class="fa fa-institution"></i> Ville</label
+                  >
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="New York"
+                  />
+
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">Pays</label>
+                      <input
+                        type="text"
+                        id="state"
+                        name="state"
+                        placeholder="NY"
+                      />
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input
+                        type="text"
+                        id="zip"
+                        name="zip"
+                        placeholder="10001"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-50">
+                  <h3>Paiement</h3>
+                  <label for="fname">Carte accepter</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color: navy"></i>
+                    <i class="fa fa-cc-amex" style="color: blue"></i>
+                    <i class="fa fa-cc-mastercard" style="color: red"></i>
+                    <i class="fa fa-cc-discover" style="color: orange"></i>
+                  </div>
+                  <label for="cname">Nom sur la carte</label>
+                  <input
+                    type="text"
+                    id="cname"
+                    name="cardname"
+                    placeholder="John More Doe"
+                  />
+                  <label for="ccnum">Numéro carte de crédit</label>
+                  <input
+                    type="text"
+                    id="ccnum"
+                    name="cardnumber"
+                    placeholder="1111-2222-3333-4444"
+                  />
+                  <label for="expmonth">Mois d'expiration</label>
+                  <input
+                    type="text"
+                    id="expmonth"
+                    name="expmonth"
+                    placeholder="September"
+                  />
+                  <div class="row2">
+                    <div class="col-50">
+                      <label for="expyear">Année d'expiration</label>
+                      <input
+                        type="text"
+                        id="expyear"
+                        name="expyear"
+                        placeholder="2018"
+                      />
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input
+                        type="text"
+                        id="cvv"
+                        name="cvv"
+                        placeholder="352"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr" />
+                Adresse de facturation
+              </label>
+              <input type="submit" value="Continuer pour payer" class="btn" />
+            </form>
+          </div>
+        </div>
+        <div class="col-25">
+          <div class="container">
+            <h4>
+              Panier
+              <span class="price" style="color: black"
+                ><i class="fa fa-shopping-cart"></i> <b>1</b></span
+              >
+            </h4>
+            <p><a href="#">Hoodie DDP</a> <span class="price">89,00 €</span></p>
+
+            <hr />
+            <p>
+              Total
+              <span class="price" style="color: black"><b>89,00 €</b></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="section-one">
+        <div class="ddp-section-one">
+          <p>
+            "DDP a marqué toute une génération à qui elle appartient désormais."
+          </p>
+          <img src="./assets/img/ddp-perso_400x.svg" alt="" />
+        </div>
+        <div class="container-one">
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="./assets/img/ddp1flou.png"
+                  alt="Image initiale"
+                  class="initial-image"
+                />
+                <img
+                  src="./assets/img/ddp1.png"
+                  alt="Image au survol"
+                  class="hover-image"
+                />
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Tee-shirt</p>
+                  </div>
+                  <div class="price">
+                    <p>39,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="./assets/img/ddp4flou.png"
+                  alt="Image initiale"
+                  class="initial-image"
+                />
+
+                <img
+                  src="./assets/img/ddp4.png"
+                  alt="Image au survol"
+                  class="hover-image"
+                />
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Tee-shirt</p>
+                  </div>
+                  <div class="price">
+                    <p>39,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-two">
+        <div class="container-one">
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <a href="./pages/products.html">
+                  <img
+                    src="./assets/img/ddp5.webp"
+                    alt="Image initiale"
+                    class="initial-image"
+                    href="./pages/products.html"
+                  />
+                  <img
+                    src="./assets/img/ddp7.webp"
+                    alt="Image au survol"
+                    class="hover-image"
+                  />
+                </a>
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Hoodie</p>
+                  </div>
+                  <div class="price">
+                    <p>89,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <a href="./pages/products.html">
+                  <img
+                    src="./assets/img/ddp6.webp"
+                    alt="Image initiale"
+                    class="initial-image" />
+                  <img
+                    src="./assets/img/ddp8.webp"
+                    alt="Image au survol"
+                    class="hover-image"
+                /></a>
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Hoodie</p>
+                  </div>
+                  <div class="price">
+                    <p>89,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-three">
+        <h2>2023</h2>
+        <p>
+          Depuis toujours, la mutation et la transformation sont donc des
+          croyances fortes au seins de la marque. En 2022, nous souhaitons
+          perpétuer cette tradition ! Faire vivre l’héritage de la marque,
+          cultiver son humour, et la faire évoluer en s’inspirant de la
+          photographie, la musique, et plus largement de toutes les cultures et
+          sous-cultures.
+        </p>
+      </section>
+      <section class="section-four">
+        <div class="container-one">
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <a href="./pages/products.html">
+                  <img
+                    src="./assets/img/ddp9.webp"
+                    alt="Image initiale"
+                    class="initial-image"
+                    href="./pages/products.html"
+                  />
+                  <img
+                    src="./assets/img/ddp9-2.webp"
+                    alt="Image au survol"
+                    class="hover-image"
+                    href="./pages/products.html"
+                  />
+                </a>
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Pull Vintage multico</p>
+                  </div>
+                  <div class="price">
+                    <p>69,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <a href="./pages/products.html">
+                  <img
+                    src="./assets/img/ddp10.webp"
+                    alt="Image initiale"
+                    class="initial-image"
+                  />
+                  <img
+                    src="./assets/img/ddp10-2.webp"
+                    alt="Image au survol"
+                    class="hover-image"
+                  />
+                </a>
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Veste vintage jaune et noire</p>
+                  </div>
+                  <div class="price">
+                    <p>79,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <a href="./pages/products.html">
+                  <img
+                    src="./assets/img/ddp11.webp"
+                    alt="Image initiale"
+                    class="initial-image" />
+                  <img
+                    src="./assets/img/ddp11-2.webp"
+                    alt="Image au survol"
+                    class="hover-image"
+                /></a>
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Longue jupe vintage kaki</p>
+                  </div>
+                  <div class="price">
+                    <p>49,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <a href="./pages/products.html">
+                  <img
+                    src="./assets/img/ddp13.webp"
+                    alt="Image initiale"
+                    class="initial-image" />
+                  <img
+                    src="./assets/img/ddp13-2.webp"
+                    alt="Image au survol"
+                    class="hover-image"
+                /></a>
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Tenue vintage kaki</p>
+                  </div>
+                  <div class="price">
+                    <p>139,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-five">
+        <div class="container-one">
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <a href="./pages/products.html">
+                  <img
+                    src="./assets/img/ddp12.webp"
+                    alt="Image initiale"
+                    class="initial-image" />
+                  <img
+                    src="./assets/img/ddp12-2.webp"
+                    alt="Image au survol"
+                    class="hover-image"
+                /></a>
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Pantalon vintage noir</p>
+                  </div>
+                  <div class="price">
+                    <p>79,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <a href="./pages/products.html">
+                  <img
+                    src="./assets/img/ddp19-2.webp"
+                    alt="Image initiale"
+                    class="initial-image" />
+                  <img
+                    src="./assets/img/ddp19.webp"
+                    alt="Image au survol"
+                    class="hover-image"
+                /></a>
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Gillet vintage noir</p>
+                  </div>
+                  <div class="price">
+                    <p>69,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <a href="./pages/products.html">
+                  <img
+                    src="./assets/img/ddp15.webp"
+                    alt="Image initiale"
+                    class="initial-image" />
+                  <img
+                    src="./assets/img/ddp15.webp"
+                    alt="Image au survol"
+                    class="hover-image"
+                /></a>
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Débardeur vintage rouge</p>
+                  </div>
+                  <div class="price">
+                    <p>39,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <a href="./pages/products.html">
+                  <img
+                    src="./assets/img/ddp16.webp"
+                    alt="Image initiale"
+                    class="initial-image" />
+                  <img
+                    src="./assets/img/ddp16-2.webp"
+                    alt="Image au survol"
+                    class="hover-image"
+                /></a>
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Pantalon vintage kaki</p>
+                  </div>
+                  <div class="price">
+                    <p>65,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-six">
+        <div class="container-one">
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <a href="./pages/products.html">
+                  <img
+                    src="./assets/img/ddp18.webp"
+                    alt="Image initiale"
+                    class="initial-image" />
+                  <img
+                    src="./assets/img/ddp18-2.webp"
+                    alt="Image au survol"
+                    class="hover-image"
+                /></a>
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Veste Laine noir</p>
+                  </div>
+                  <div class="price">
+                    <p>55,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <a href="./pages/products.html">
+                  <img
+                    src="./assets/img/ddp14.webp"
+                    alt="Image initiale"
+                    class="initial-image" />
+                  <img
+                    src="./assets/img/ddp14-2.webp"
+                    alt="Image au survol"
+                    class="hover-image"
+                /></a>
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Salopette vintage blanc</p>
+                  </div>
+                  <div class="price">
+                    <p>79,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <a href="./pages/products.html">
+                  <img
+                    src="./assets/img/ddp17.webp"
+                    alt="Image initiale"
+                    class="initial-image" />
+                  <img
+                    src="./assets/img/ddp17-2.webp"
+                    alt="Image au survol"
+                    class="hover-image"
+                /></a>
+                <div class="p-photo">
+                  <div class="-p-content-photo">
+                    <p>DDP 95</p>
+                    <p>Pantalon vintage multico</p>
+                  </div>
+                  <div class="price">
+                    <p>65,00€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="presentation">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img src="" alt="" class="initial-image" />
+                <img src="" alt="" class="hover-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-seven">
+        <div id="shopify-section-reassurance-footer" class="shopify-section">
+          <section
+            class="Section Section--spacingNormal section-icons"
+            data-section-id="reassurance-footer"
+            id="section-reassurance-footer"
+            data-section-type="text-with-icons"
+          >
+            <div class="Container">
+              <div class="reassuring_block">
+                <ul class="reassuring">
+                  <li class="icones_with_txt">
+                    <img
+                      src="//cdn.shopify.com/s/files/1/0629/5168/6394/files/ico_support_copy_400x.png?v=1680598931"
+                    />
+                    <div>
+                      <h4 class="BR u-h2">Besoin d'aide</h4>
+                      <div class="Heading">
+                        <a href="mailto:contact@ddp.fr" target="_blank"
+                          >contact@ddp.fr</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="icones_with_txt">
+                    <img
+                      src="//cdn.shopify.com/s/files/1/0629/5168/6394/files/ico_bank_copy_400x.png?v=1680598931"
+                    />
+                    <div>
+                      <h4 class="BR u-h2">Paiement sécurisé</h4>
+                      <div class="Heading">avec Paypal</div>
+                    </div>
+                  </li>
+                  <li class="icones_with_txt">
+                    <img
+                      src="//cdn.shopify.com/s/files/1/0629/5168/6394/files/ico_fast_400x.png?v=1680598931"
+                    />
+                    <div>
+                      <h4 class="BR u-h2">Livraison offerte</h4>
+                      <div class="Heading">
+                        dès 100€ d'achat avec le code FREESHIPPING
+                      </div>
+                    </div>
+                  </li>
+                  <li class="icones_with_txt">
+                    <img
+                      src="//cdn.shopify.com/s/files/1/0629/5168/6394/files/ico_retours_400x.png?v=1680598931"
+                    />
+                    <div>
+                      <h4 class="BR u-h2">Retours offerts</h4>
+                      <div class="Heading">14 jours pour se rétracter</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="about">
+        <a href="./pages/delivery.html">Shipping & Delivery</a>
+      </div>
+      <div class="shop">
+        <a href="./pages/contact.html">Contacts</a>
+      </div>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

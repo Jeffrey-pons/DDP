@@ -1,0 +1,287 @@
+body {
+  .payment {
+    display: none;
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      margin: 0 -16px;
+      max-width: 990px;
+      margin: auto;
+      padding-top: 50px;
+      // z-index: 10000000000;
+      position: sticky;
+
+      H3,
+      label {
+        font-family: "Alma";
+      }
+    }
+    .col-25 {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      .container {
+        h4,
+        a {
+          font-family: "Alma";
+        }
+      }
+    }
+
+    .col-50 {
+      -ms-flex: 50%; /* IE10 */
+      flex: 50%;
+    }
+
+    .col-75 {
+      -ms-flex: 75%; /* IE10 */
+      flex: 75%;
+    }
+
+    .col-25,
+    .col-50,
+    .col-75 {
+      padding: 0 16px;
+    }
+
+    .container {
+      background-color: #f2f2f2;
+      padding: 5px 20px 15px 20px;
+      border: 1px solid lightgrey;
+      border-radius: 3px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    label {
+      display: block;
+    }
+
+    .icon-container {
+      padding: 7px 0;
+      font-size: 24px;
+    }
+
+    .btn {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      width: 100%;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 17px;
+      border: 1px solid black;
+      border-radius: 30px;
+      font-family: "M Ying Hei PRC";
+    }
+
+    .btn:hover {
+      background-color: #000000;
+      color: white;
+    }
+
+    a {
+      color: #2196f3;
+    }
+
+    hr {
+      border: 1px solid lightgrey;
+    }
+
+    span.price {
+      float: right;
+      color: grey;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+    @media (max-width: 800px) {
+      .row {
+        flex-direction: column-reverse;
+      }
+      .col-25 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .product-image-panier {
+    width: 100px;
+    padding-top: 16px;
+  }
+  .product-info {
+    .product-h3-panier {
+      font-family: "Alma-Bold";
+      font-size: 22px;
+    }
+    .product-price {
+      font-family: "Alma-Bold";
+      font-size: 20px;
+    }
+    .product-p-panier {
+      font-family: "Alma";
+      font-size: 18px;
+    }
+    span {
+      font-family: "Alma";
+      font-size: 8px;
+    }
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: rgb(235 235 235);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100000;
+    .sidebar-content {
+      max-width: 250px;
+      margin: auto;
+      padding: 30px 0px 0px 0px;
+      #checkout {
+        border-radius: 51px;
+        position: absolute;
+        top: 369px;
+        right: 15px;
+        padding: 2px 76px 2px 76px;
+        background-color: rgb(235 235 235);
+        border: 1px solid black;
+        display: none;
+        font-size: 20px;
+        font-family: "M Ying Hei PRC";
+        cursor: url(../assets/img/cursor/test3.png) 20 10, auto;
+      }
+      #checkout:hover {
+        background-color: rgb(218, 218, 218);
+      }
+
+      .product-item {
+        padding: 6px;
+      }
+      .product-item:hover {
+        background-color: #7b7b7b23;
+        padding: 6px;
+        z-index: 10000000;
+        #close-product {
+          display: flex;
+        }
+        position: relative;
+        box-sizing: border-box;
+        border-radius: 8px;
+        transition: background-color 0.1s linear;
+      }
+      h2 {
+        font-family: "M Ying Hei PRC";
+        font-size: 25px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .sidebar.active {
+    transform: translateX(-300px);
+  }
+  .close-btn {
+    cursor: url(../assets/img/cursor/test3.png) 20 10, auto;
+    position: absolute;
+    top: 15px;
+    left: -76px;
+    color: #fff;
+    font-size: 34px;
+    background: rgb(179, 179, 179);
+    /* border: 1px solid black; */
+    height: 30px;
+    height: 30px;
+    width: 19%;
+    height: 55px;
+    border-radius: 128px;
+    cursor: pointer;
+    display: none;
+  }
+  main {
+    section {
+      .container-product {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        .img-product {
+          flex: 1;
+          img {
+            max-width: 70%;
+          }
+        }
+        .p-product {
+          flex: 1;
+          h2 {
+            font-family: "Alma-Bold";
+            color: grey;
+            font-size: 18px;
+          }
+          h1 {
+            font-family: "Alma-Bold";
+            font-size: 34px;
+          }
+          label {
+            font-family: "Alma-Bold";
+            font-size: 18px;
+          }
+          span {
+            select {
+              font-family: "Alma";
+            }
+          }
+          p {
+            font-family: "Alma";
+            max-width: 70%;
+            margin: auto;
+            padding-top: 20px;
+            font-size: 18px;
+            padding-bottom: 20px;
+          }
+          button {
+            color: #000;
+            background: #fff;
+            border-radius: 30px;
+            box-shadow: #000 0px 0px 0px 1px inset;
+            height: 31px;
+            width: 34%;
+            transition: all 0s ease-out 0s;
+            text-align: center;
+            font-size: 19px;
+            font-family: "M Ying Hei PRC";
+          }
+          button:hover {
+            color: #fff;
+            background-color: #000;
+            cursor: url(../assets/img/cursor/test3.png) 20 10, auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  body {
+    main {
+      section {
+        padding-bottom: 60px;
+        .container-product {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

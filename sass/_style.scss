@@ -1,0 +1,375 @@
+// @import url(//db.onlinewebfonts.com/c/c7988a4e3e8cc0b7152a121298699ed0?family=M+Ying+Hei+PRC);
+@import url(//db.onlinewebfonts.com/c/a961a5374798a54c8234a1d278e22ede?family=SDF+Light);
+@import url(//db.onlinewebfonts.com/c/020030161d82612b0ea41bcc45d07c0f?family=CCRightInTheKisserW00-Bold);
+@font-face {
+  font-family: "Alma";
+  src: url("../assets/fonts/AlmaSans-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Neueve";
+  src: url("../assets/fonts/Demo_Fonts/Fontspring-DEMO-neuevektor-b-regular.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Alma-Bold";
+  src: url("../assets/fonts/AlmaSans-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Marvin";
+  src: local("Marvin Regular"), local("Marvin-Regular"),
+    url("../assets/fonts/Marvin.woff2") format("woff2"),
+    url("../assets/fonts/Marvin.woff") format("woff"),
+    url("../assets/fonts/Marvin.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  cursor: crosshair;
+  a {
+    cursor: url(../assets/img/cursor/test3.png) 20 10, auto;
+  }
+  header {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      position: fixed;
+      z-index: 10000;
+      top: -28.5px;
+      width: 100%;
+      .logo {
+        text-align: center;
+        margin: 0 auto;
+        a {
+          img {
+            max-width: 86%;
+            text-align: center;
+            padding-right: 9px;
+          }
+        }
+      }
+      a {
+        font-family: "M Ying Hei PRC";
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        cursor: url(../assets/img/cursor/test3.png) 20 10, auto;
+      }
+    }
+  }
+  main {
+    .p-photo {
+      cursor: url(../assets/img/cursor/test3.png) 20 10, auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 20px 0px 20px;
+      .-p-content-photo {
+        p {
+          font-family: "Alma";
+          font-size: 16.5px;
+          text-align: left;
+        }
+      }
+      .price {
+        p {
+          font-family: "Alma-Bold";
+          font-size: 17px;
+        }
+      }
+    }
+    .section-one {
+      padding-bottom: 60px;
+      .ddp-section-one {
+        p {
+          font-family: "Marvin";
+          color: #ffdf2e;
+          text-transform: uppercase;
+          position: absolute;
+          top: 187px;
+          max-width: 1000px;
+          left: 252px;
+          z-index: 100000;
+          font-size: 70px;
+          text-align: center;
+        }
+        img {
+          max-width: 4%;
+          position: absolute;
+          z-index: 1000;
+          top: 557px;
+          right: 437px;
+        }
+      }
+    }
+    padding-top: 50px;
+    .container-one {
+      display: flex;
+      text-align: center;
+      #presentation {
+        .image-container {
+          position: relative;
+          display: inline-block;
+        }
+
+        .image-wrapper {
+          position: relative;
+          overflow: hidden;
+        }
+
+        .hover-image {
+          position: absolute;
+          bottom: 58px;
+          left: 4px;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+
+        .image-wrapper:hover .hover-image {
+          opacity: 1;
+        }
+
+        flex: 1;
+        img {
+          max-width: 99.5%;
+        }
+      }
+    }
+    .section-two {
+      .container-two {
+        p {
+          font-size: 25px;
+        }
+      }
+    }
+    .section-three {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      padding: 30px 50px 50px 50px;
+      h2 {
+        font-family: "Alma-Bold";
+        font-size: 28px;
+      }
+      p {
+        font-family: "Alma";
+        font-size: 18px;
+      }
+    }
+    .section-four {
+      padding-bottom: 60px;
+      .container-one {
+        display: flex;
+        text-align: center;
+        #presentation {
+          .image-container {
+            position: relative;
+            display: inline-block;
+          }
+
+          .image-wrapper {
+            position: relative;
+            overflow: hidden;
+          }
+
+          .hover-image {
+            position: absolute;
+            bottom: 58px;
+            left: 1px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+          }
+
+          .image-wrapper:hover .hover-image {
+            opacity: 1;
+          }
+
+          flex: 1;
+          img {
+            max-width: 99%;
+          }
+        }
+      }
+    }
+    .section-five {
+      padding-bottom: 60px;
+      .container-one {
+        display: flex;
+        text-align: center;
+        #presentation {
+          .image-container {
+            position: relative;
+            display: inline-block;
+          }
+
+          .image-wrapper {
+            position: relative;
+            overflow: hidden;
+          }
+
+          .hover-image {
+            position: absolute;
+            bottom: 58px;
+            left: 2px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+          }
+
+          .image-wrapper:hover .hover-image {
+            opacity: 1;
+          }
+
+          flex: 1;
+          img {
+            max-width: 99%;
+          }
+        }
+      }
+    }
+    .section-six {
+      padding-bottom: 85px;
+      .container-one {
+        display: flex;
+        text-align: center;
+        #presentation {
+          .hover-image {
+            position: absolute;
+            bottom: 58px;
+            left: 2px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+          }
+        }
+      }
+    }
+    .section-seven {
+      padding-bottom: 120px;
+      .Container {
+        ul {
+          display: flex;
+          text-align: center;
+          h4 {
+            font-family: "Alma-bold";
+          }
+          a,
+          div {
+            font-family: "Alma";
+            font-size: 14px;
+            text-decoration: none;
+            color: black;
+            cursor: url(../assets/img/cursor/test3.png) 20 10, auto;
+          }
+        }
+        img {
+          max-width: 60%;
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    z-index: 10000;
+    bottom: 7.5px;
+    width: 100%;
+    a {
+      font-family: "M Ying Hei PRC";
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      cursor: url(../assets/img/cursor/test3.png) 20 10, auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    main {
+      .section-one {
+        .ddp-section-one {
+          p,
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    main {
+      .section-one-about {
+        img {
+          max-width: 40%;
+        }
+        .about-text {
+          p {
+            padding: 20px;
+          }
+        }
+      }
+      .section-seven {
+        padding-bottom: 0px;
+        .Container {
+          ul {
+            flex-direction: column;
+            li {
+              padding-bottom: 40px;
+              img {
+                max-width: 40%;
+              }
+            }
+          }
+        }
+      }
+      .section-one,
+      .section-two,
+      .section-four,
+      .section-five,
+      .section-six {
+        .container-one {
+          flex-direction: column;
+        }
+      }
+
+      .section-two {
+        padding-bottom: 0px;
+      }
+      .section-three {
+        padding: 0px 50px 69px 50px;
+      }
+      .section-four,
+      .section-five,
+      .section-six {
+        .p-photo {
+          padding: 31px 69px 31px 69px;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          p {
+            text-align: center;
+          }
+        }
+        #presentation {
+          .image-wrapper {
+            img {
+              max-width: 70%;
+            }
+            .hover-image {
+              position: absolute;
+              bottom: 148px;
+              left: 72px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
